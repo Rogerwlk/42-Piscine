@@ -1,0 +1,110 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r3p26.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 21 13:39:52 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam-final/exam_20170721/rwang
+
+= Git history ==================================================================
+$> git -C /var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user log --pretty='%H - %an, %ad : %s'
+4e860b41407c8d398fb4d1d9a975c92e0a7fe294 - Exam 42, Fri Jul 21 13:38:30 2017 -0700 : add str_maxlenoc.c
+0a955661f796d3af60870d442e43dc488dbdc5c0 - Exam 42, Fri Jul 21 12:34:00 2017 -0700 : add count_alpha.c
+b8ffc7f91761697334b7e511355c4721d28786a5 - Exam 42, Fri Jul 21 11:52:31 2017 -0700 : add brainfuck.c
+0be5ac4753a29d690677d6d3e2fcea57f1185aa9 - Exam 42, Fri Jul 21 11:08:39 2017 -0700 : add ft_list.h ft_list_foreach.c
+3d6212a51d272450313c45924b06e522ed9ede67 - Exam 42, Fri Jul 21 10:51:54 2017 -0700 : add rstr_capitalizer.c
+66cad61ae8824e1b2740eaacfcd1349ae8ba8652 - Exam 42, Fri Jul 21 10:30:36 2017 -0700 : add wdmatch.c
+b366249fe05c348f92d9e780d1498205a7861356 - Exam 42, Fri Jul 21 10:18:25 2017 -0700 : add rev_print.c
+6f3d48ab2b11cb5bc70cbe68728378160d303788 - Exam 42, Fri Jul 21 10:11:14 2017 -0700 : add aff_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2091 Jul 21 13:39 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 aff_z
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 brainfuck
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 count_alpha
+drwxr-xr-x  4 deepthought  deepthought   136 Jul 21 13:39 ft_list_foreach
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 rev_print
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 rstr_capitalizer
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 str_maxlenoc
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 13:39 wdmatch
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  967 Jul 21 13:39 aff_z.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/brainfuck:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1834 Jul 21 13:39 brainfuck.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/count_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2034 Jul 21 13:39 count_alpha.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/ft_list_foreach:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1012 Jul 21 13:39 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1060 Jul 21 13:39 ft_list_foreach.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1121 Jul 21 13:39 rev_print.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1505 Jul 21 13:39 rstr_capitalizer.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/str_maxlenoc:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2196 Jul 21 13:39 str_maxlenoc.c
+
+/var/folders/vh/mt33f0g15w1gqt3ls3bhqgvh0000gp/T/tmpLHgt3E/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1221 Jul 21 13:39 wdmatch.c
+ 
+= str_maxlenoc =================================================================
+$> gcc -Wextra -Wall -Werror str_maxlenoc.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./m4olo295r88wdf6if3a9sj0o "Bonjour"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./mq7hzjfwd08dulqctogjx36l "bonjouran" "bonjouran" "confiseriean" "bonne annee"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./sgasemma74tm8njknwcwfkia "bonjour an" "bonjour an" "confiserie an" "bonne annee"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./h3ijzl0hcbcon68l2iluyq8o "voila" "voila" "ouais ben voila"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./y14j2ma3jg1180qzbbyj6774 "bosdsdfnjodur" "atehhellosd" "afkuonjosurafg" "headfgllosf" "fghellosag afdfbosnjourafg"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

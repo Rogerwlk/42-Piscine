@@ -1,0 +1,172 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r5p18.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 14 19:50:16 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170715/rwang
+
+= Git history ==================================================================
+$> git -C /var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user log --pretty='%H - %an, %ad : %s'
+490bcfd2ad9162dad91beba23df6b5ae43350c47 - Exam 42, Fri Jul 14 19:47:04 2017 -0700 : add ft_itoa_base.c
+4e23f14d1a366692ccd2007647f4c187848621f0 - Exam 42, Fri Jul 14 19:10:44 2017 -0700 : add sort_int_tab.c
+690b472d44578e67b6472e41ff3d891fbdc8393c - Exam 42, Fri Jul 14 18:56:48 2017 -0700 : add ft_rrange.c
+644c3e57ea099fb8498d33836a64678d4e5a1a51 - Exam 42, Fri Jul 14 18:36:56 2017 -0700 : add print_bits.c
+7ab741fd98f6b27d03474da22b0d6af1fd9b222d - Exam 42, Fri Jul 14 18:23:00 2017 -0700 : add rot_13
+424e0b0be858b5b6b4c3d798d8914135578421f4 - Exam 42, Fri Jul 14 18:07:58 2017 -0700 : add ex01
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1512 Jul 14 19:50 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 ft_itoa_base
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 ft_rrange
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 print_bits
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 rot_13
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 14 19:50 sort_int_tab
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1100 Jul 14 19:50 aff_last_param.c
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/ft_itoa_base:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1710 Jul 14 19:50 ft_itoa_base.c
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/ft_rrange:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1271 Jul 14 19:50 ft_rrange.c
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/print_bits:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1149 Jul 14 19:50 print_bits.c
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1354 Jul 14 19:50 rot_13.c
+
+/var/folders/4r/vtydsrc13qs4w2142qd2p5p40000gp/T/tmp70zRAo/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1232 Jul 14 19:50 sort_int_tab.c
+ 
+= ft_itoa_base =================================================================
+$> gcc -Wextra -Wall -Werror ft_itoa_base.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./5vaafll1nzyyfuuu4iib4jdp 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./beqhg08nge4k5wo9wikyhchm "21" "2313" "12"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./w033t0ext873rom0rcntf6rc "2147483647" "10"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./obzfpbnjnbrr07snkxxnhqu0 "-2147483648" "10"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./n4w9jkw5mdrl6vd5zlmfe230 "0" "2"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./blun1d18bbtboj0iuxfrtwt9 "--223" "10"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./pnhx7ycy1q5wbpmtkgczpkzc "758499506" "16"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./n4g005b7c4lej3w60u259y80 "766625446" "2"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./q66bfio9nrhhwefl9vlfl1rc "1522537904" "5"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./jzr8pd23wkghtevt16i38i79 "1980825050" "13"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./7ck26f2pq1d26wwq59acfuvy "1951179098" "10"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./25je3mn6i838jy0x7rtl5pc7 "1574392179" "12"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./vc6coerf2dx12emccdx5g9gj "530983848" "12"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./0x20ndug1n9w8vtkfjt9a9xe "1473454983" "2"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+
+Diff OK :D
+= Test 15 ==================================================
+$> ./uwpmo5qk1jddm1h90e3sq5jh "20656702" "12"
+$> diff -U 3 user_output_test15 test15.output | cat -e
+
+Diff OK :D
+= Test 16 ==================================================
+$> ./150ujus8p67henz1euuvu1fk "836435337" "13"
+$> diff -U 3 user_output_test16 test16.output | cat -e
+
+Diff OK :D
+= Test 17 ==================================================
+$> ./6tdfqmtzt50cnfmbrkew85ue "1911039010" "15"
+$> diff -U 3 user_output_test17 test17.output | cat -e
+
+Diff OK :D
+= Test 18 ==================================================
+$> ./jav4hhaznf2zrkxuc7kj5v4h "862075315" "4"
+$> diff -U 3 user_output_test18 test18.output | cat -e
+
+Diff OK :D
+= Test 19 ==================================================
+$> ./vdvnbmzbag4kdhy1wvq2nzwk "-61482090" "10"
+$> diff -U 3 user_output_test19 test19.output | cat -e
+
+Diff OK :D
+= Test 20 ==================================================
+$> ./wyo6fhsm8dlcnkoffdimz0i7 "1604549331" "8"
+$> diff -U 3 user_output_test20 test20.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

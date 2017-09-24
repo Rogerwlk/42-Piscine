@@ -1,0 +1,1 @@
+cat "$1" | grep -i "bauer" | grep -i "n" | sed -n '/-/ p' | sed '3 d' | sed 's/Anastacio//' | sed 's/Bernhard//' | sed 's/[a-zA-Z]//g' | sed 's/\.//g' | sed 's/@*//g' | sed 's/11348-4028//' | tr -d '\t'

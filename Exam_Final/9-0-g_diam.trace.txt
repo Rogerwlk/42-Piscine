@@ -1,0 +1,105 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r6p30.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 21 17:49:10 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam-final/exam_20170721/rwang
+
+= Git history ==================================================================
+$> git -C /var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user log --pretty='%H - %an, %ad : %s'
+c191bf2985b47033682d31980296707fd6875ffd - Exam 42, Fri Jul 21 17:48:56 2017 -0700 : add all
+805a91f76543c76744baeaf8e424051b0da4e68e - Exam 42, Fri Jul 21 14:47:48 2017 -0700 : add io.c main.c count_island.h
+4e860b41407c8d398fb4d1d9a975c92e0a7fe294 - Exam 42, Fri Jul 21 13:38:30 2017 -0700 : add str_maxlenoc.c
+0a955661f796d3af60870d442e43dc488dbdc5c0 - Exam 42, Fri Jul 21 12:34:00 2017 -0700 : add count_alpha.c
+b8ffc7f91761697334b7e511355c4721d28786a5 - Exam 42, Fri Jul 21 11:52:31 2017 -0700 : add brainfuck.c
+0be5ac4753a29d690677d6d3e2fcea57f1185aa9 - Exam 42, Fri Jul 21 11:08:39 2017 -0700 : add ft_list.h ft_list_foreach.c
+3d6212a51d272450313c45924b06e522ed9ede67 - Exam 42, Fri Jul 21 10:51:54 2017 -0700 : add rstr_capitalizer.c
+66cad61ae8824e1b2740eaacfcd1349ae8ba8652 - Exam 42, Fri Jul 21 10:30:36 2017 -0700 : add wdmatch.c
+b366249fe05c348f92d9e780d1498205a7861356 - Exam 42, Fri Jul 21 10:18:25 2017 -0700 : add rev_print.c
+6f3d48ab2b11cb5bc70cbe68728378160d303788 - Exam 42, Fri Jul 21 10:11:14 2017 -0700 : add aff_z.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  2900 Jul 21 17:49 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 aff_z
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 brainfuck
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 count_alpha
+drwxr-xr-x  5 deepthought  deepthought   170 Jul 21 17:49 count_island
+drwxr-xr-x  4 deepthought  deepthought   136 Jul 21 17:49 ft_list_foreach
+drwxr-xr-x  6 deepthought  deepthought   204 Jul 21 17:49 g_diam
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 rev_print
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 rstr_capitalizer
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 str_maxlenoc
+drwxr-xr-x  3 deepthought  deepthought   102 Jul 21 17:49 wdmatch
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/aff_z:
+total 8
+-rw-r--r--  1 deepthought  deepthought  967 Jul 21 17:49 aff_z.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/brainfuck:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1834 Jul 21 17:49 brainfuck.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/count_alpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2034 Jul 21 17:49 count_alpha.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/count_island:
+total 24
+-rw-r--r--  1 deepthought  deepthought  1200 Jul 21 17:49 count_island.h
+-rw-r--r--  1 deepthought  deepthought  1845 Jul 21 17:49 io.c
+-rw-r--r--  1 deepthought  deepthought  1735 Jul 21 17:49 main.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/ft_list_foreach:
+total 16
+-rw-r--r--  1 deepthought  deepthought  1012 Jul 21 17:49 ft_list.h
+-rw-r--r--  1 deepthought  deepthought  1060 Jul 21 17:49 ft_list_foreach.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/g_diam:
+total 32
+-rw-r--r--  1 deepthought  deepthought  2034 Jul 21 17:49 ft_lib.c
+-rw-r--r--  1 deepthought  deepthought  1102 Jul 21 17:49 ft_lib.h
+-rw-r--r--  1 deepthought  deepthought  1103 Jul 21 17:49 g_diam.h
+-rw-r--r--  1 deepthought  deepthought  2221 Jul 21 17:49 main.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/rev_print:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1121 Jul 21 17:49 rev_print.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1505 Jul 21 17:49 rstr_capitalizer.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/str_maxlenoc:
+total 8
+-rw-r--r--  1 deepthought  deepthought  2196 Jul 21 17:49 str_maxlenoc.c
+
+/var/folders/7y/0lyfclvn2mdcs_7cx_c0258m0000gp/T/tmpXtqd1v/user/wdmatch:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1221 Jul 21 17:49 wdmatch.c
+ 
+= g_diam =======================================================================
+$> gcc -Wextra -Wall -Werror ft_lib.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./d3esm1e4ooe2xqt75ebwa4u5 "9-23 9-2122 2122-23 2122-24 31-2122 31-41 71-31 8-71 42-71"
+Command './d3esm1e4ooe2xqt75ebwa4u5 "9-23 9-2122 2122-23 2122-24 31-2122 31-41 71-31 8-71 42-71"' timed out after 10 seconds
+Grade: 0
+
+= Final grade: 0 ===============================================================

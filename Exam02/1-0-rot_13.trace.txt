@@ -1,0 +1,103 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r4p9.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Jul 14 18:23:57 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20170715/rwang
+
+= Git history ==================================================================
+$> git -C /var/folders/42/8lzs01611ss_3h9b98dtp9340000gp/T/tmp7kvlUt/user log --pretty='%H - %an, %ad : %s'
+7ab741fd98f6b27d03474da22b0d6af1fd9b222d - Exam 42, Fri Jul 14 18:23:00 2017 -0700 : add rot_13
+424e0b0be858b5b6b4c3d798d8914135578421f4 - Exam 42, Fri Jul 14 18:07:58 2017 -0700 : add ex01
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/42/8lzs01611ss_3h9b98dtp9340000gp/T/tmp7kvlUt/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  487 Jul 14 18:23 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 14 18:23 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 14 18:23 rot_13
+
+/var/folders/42/8lzs01611ss_3h9b98dtp9340000gp/T/tmp7kvlUt/user/aff_last_param:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1100 Jul 14 18:23 aff_last_param.c
+
+/var/folders/42/8lzs01611ss_3h9b98dtp9340000gp/T/tmp7kvlUt/user/rot_13:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1354 Jul 14 18:23 rot_13.c
+ 
+= rot_13 =======================================================================
+$> gcc -Wextra -Wall -Werror rot_13.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./igruyauhhqrmbli8qm8hd5ql 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./n4lcgbejv29955ih47s5dlla "y41"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./hzwwo6c5kyjmbsew5clutxab "0dw2Wt7Bci5zrjAHZ"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./01cxwg17azz937hr2r3udoyn "JE8uso"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./xb2tj0ujybafdpvtkggkkzzo "YgodUk3 F4khN 0IAqLiKDX8N1 noArjiIS hMLqDm6FJ Yo0kONUexh DyYKXd4RgFEN vUGSxmV0QAwub 5gjuIE9YW zg8AGWNQ1sSoYu2DU KXcISk0ZY 4H8dMsYfVJqeUXPv hAU1v QzlTbIDY0osGCVen atUO3EK2up4nCT"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./s7b12bwb0bryylxe1leci8k1 "VmKb2pszdQ3iY dTt V5sc9fZvNlypt pMKQENF1 ynFeQf6 gVQ3ZTn BRgA0 AW4jm"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./7fzu28p5uulkjynq8je3xkow "pEulya2D h1ZNE9rbDwJIiUl I6KO3eNm2RsW rYqOEWCt tV5fOeRUWMZ yD8KREz2a3tq7 vWn1IoVNEbdfYOAK B8Y6"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./a24kpf513ie5ia7mdcmfieyh "hpYTUgK" "AQjkm9vPxq1" "yAnos" "YbQO" "mBX" "5o36CfUl" "74aku6emC2hKl" "Ec0hiQV7HSr" "XfqcNAY9UshzH3BC" "Pn2Cq9U0v" "XGI3cYPOxnoDtR1v" "SZCQuN" "dftrW9Bjca" "DzWNICj3Hu1MFTA7" "IhXomqcFkZC" "F0UD1EypHxthScJr"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./cfld2ovjylwx0hveb7cu6rap "QDvGEFN2" "uTgaKh5L" "eqap4KS8uZnTUxMI" "N5WVvbqrZX" "05AteJ9" "BR954" "BVK3k0E" "gaompMFj5Bze37u" "azecXZvJ" "MCUFE7BTgnbvxe" "w2KF"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./fz2ri2r71wro3xba90y3x1yh "SUPTAInbpcDtBgaJo 2wGb XOGE2caDd dIxUtlHc4JzBAf8 9Cyf MJQ3fG F0Xwu8H3k BXWV 6l078sIMHuyE" "p6Qxy 32MnKOZlV oZeVCu HUNcB4q dw0e3iGaqh MGS85N cnC dK0Rt7hNC65jX xXKezkutR9 RUYxV szYk 45qQh YXga42y xEdQbYwvJ4muC iRJu0awQoG1Lt WZamCdcuP" "JdMwLnbXh0 kpMFrNdg B1UjrA GzITwcL j32nwvq u4m2xj5 JSfW4wzjc ewBbtQ5o UDojWRKgead jQhT8NDegOY20zJP nhx2C 4Mw KoWlUA IT5YsPv7S KRDGPFpN"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./y3m8fvoeyb33j6foy0v8mqum "Ra9uCvi1y Yu8jkZoevDW j1yOq7rRQKd 5JjsQ8KU4OtkZm7p 5LhbprPJ I63 ctY8a0Vpe 7z1ptTCXLnjSbqP s7eZ1V2pSQfgnYh5 Zi0Sw8 0Vcn8XS3oI AWt 9nKmMjszZBA jcWVf8GNJbSseaTq qTl" "nYUi tKXCyNrBhEJD1jn 8vWas2UZf3BJ7FCN yRbcs8ImCjETnOJU Dkoqcav" "iQsjk81zcxXKlmH wngs7tkcTX8xLaWod DNFwZ4iu6YQh3xjV7 dtGOT2oyaXm 7klD9tyhsip5u gIeOpmAqvBJzT 9qg RwqZ U0WJtSC Ro2BcJZ LBw9UZjQNm u78v3YMC2cHLh ZwQ0o 6HX2AJ" "4OtqewYNR7TCG y4dU9b8Y5cVJ dUvQmWbE6xRlKDAj i7EKNVotp KkNZ7R6x4 vkXZR zTF vm9cLq0WDj6TeR HIcUy2dg5rBnoPQ" "p1u yCX9GY iGemQlM Cna9wYxlV njU7B JFevBgP KjbpGzQPo hr1mCzT7 GlhI5jTcUuvo2" "ykKaHXepOjFrw M2cOGXeb gB9 Nbsr0JxOC7 e8rdGhKDNHF0z1ls gQHUvS57 oMfW9amcvZQt TrBhYwnoebi F50m41zULgH2CnTab Zb5VrxEj ZtMiTsDg wJAD09 age8jdMzfb0Dq MuwJa G36IAiYyOpH S78cjE0amdKVFhvw" "4IX9k1OY BXYutZPsd43iJ1 PbmI8VoTGAhf 0QhtGJ5Epe2z arn4vLgc6mdbKU YFRO kO8Qr9pD7XeAivaME t7Wb63v I5tqDSbKFVcTQUjv kRFnrOyYxV3SmI opNXJ89 CtwfNBOpgSVRk" "WdLU0wbISaOopXzR BC2 ehBZFMJyon s56 0fAyid8XJNnbC CIu V87UX5CAIt JRTQGa06XC 1ICGrnOWBozDQLg VKBngPUYsk3t WhaeCRK Kzl 8PdEgKp 2a8"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
