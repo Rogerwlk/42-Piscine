@@ -1,3 +1,3 @@
 # 42-Piscine
-You can see my 42 profile by searching username rwang.
-You can see all the pdfs in the folder "pdf".
+42 School students can see my 42 profile by searching username rwang.
+All the daily homeworks are in the folder "pdf".
